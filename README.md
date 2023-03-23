@@ -4,7 +4,9 @@ A quick way to update dom elements in html through Pywebview, a missing gap in t
 #
 <h2>Quickstart 1: In this updated template, the update function in the HTML document takes a value parameter that will be used to update the innerHTML of the content element.</h2>
 #
-```javascript 
+
+```javascript
+
 <button onclick="update('')">Update content</button>
 function update(value) 
   var element = document.getElementById('content');
@@ -16,6 +18,7 @@ def update_element():
   new_value = "new_value"
   window.evaluate_js(f"update('{new_value}')")
 ```
+
 The update_element function in Python calls the evaluate_js method on the PyWebview window object to execute the update function in the HTML document, passing in the new_value parameter as a string.
 
 When the PyWebview window is created, the update_element function is called with the new value to update the content element with.
@@ -23,6 +26,7 @@ When the PyWebview window is created, the update_element function is called with
 #
 <h2>Quickstart 2: In this template, the HTML content includes an input field and a button with an onclick event that calls the sendInput function in Javascript.</h2>
 #
+
 ```javascript 
 <button onclick="sendValue()">Send Value</button>
 function sendValue() {
