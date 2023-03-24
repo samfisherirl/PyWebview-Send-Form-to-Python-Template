@@ -41,7 +41,7 @@ def send_value(self, value):
 
 When the sendInput function is called, it gets the value of the input field and calls the send_input_to_python function in Python using the pywebview.api object.
 
-The send_input_to_python function in Python is decorated with @window.expose_api to make it available to Javascript. This function simply prints the received input value to the console.
+The send_input_to_python function simply prints the received input value to the console.
 
 When the PyWebview window is created, the send_input_to_python function is registered with the PyWebview window object using the expose_api decorator.
 
