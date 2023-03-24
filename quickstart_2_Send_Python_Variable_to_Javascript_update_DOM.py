@@ -1,5 +1,9 @@
 import webview
 
+"""
+In this updated template, the update function in the HTML document takes a value parameter that will be used to update the innerHTML of the content element.
+"""
+
 # Define the HTML content
 html_content = """
 <!DOCTYPE html>
@@ -11,12 +15,10 @@ html_content = """
     <h1>Original content</h1>
     <p id="content">This is the original content of the paragraph.</p>
     <button onclick="update('')">Update content</button>
-
     <script>
         function update(value) {
             // Get the DOM element by ID
             var element = document.getElementById('content');
-
             // Update the innerHTML of the element with the passed in value
             element.innerHTML = value;
         }
@@ -33,8 +35,6 @@ def update_element():
 # Create the PyWebview window
 window = webview.create_window("PyWebview DOM Update Example", html=html_content)
 
-new_value = "fadfsdfasd"
-# Example usage of update_element function
 
 
 # Run the PyWebview event loop
