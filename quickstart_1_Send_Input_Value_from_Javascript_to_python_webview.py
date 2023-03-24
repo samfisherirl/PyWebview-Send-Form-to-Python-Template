@@ -1,4 +1,7 @@
 import webview
+"""
+In this template, the HTML content includes an input field and a button with an onclick event that calls the sendInput function in Javascript.
+"""
 
 # Define the HTML content
 html_content = """
@@ -11,13 +14,11 @@ html_content = """
     <h1>Enter a value:</h1>
     <input type="text" id="inputValue">
     <button onclick="sendValue()">Send Value</button>
-
     <script>
         function sendValue() {
             // Get the input element by ID
             var element = document.getElementById('inputValue');
             var value = element.value;
-
             // Call the PyWebview function to send the value to Python
             window.pywebview.api.send_value(value);
         }
