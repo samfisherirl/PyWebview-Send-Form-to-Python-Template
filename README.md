@@ -3,6 +3,9 @@ A quick way to update dom elements in html through Pywebview, a missing gap in t
 
 ### Quickstart 1: In this updated template, the update function in the HTML document takes a value parameter that will be used to update the innerHTML of the content element. 
 
+![image](https://github.com/samfisherirl/PyWebview-Send-Form-to-Python-Template/assets/98753696/56ae1347-5047-4762-b3a9-c9609730b5e3)
+
+
 ```javascript
 
 <button onclick="update('')">Update content</button>
